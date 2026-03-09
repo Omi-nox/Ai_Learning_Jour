@@ -7,7 +7,7 @@ This is where it all started. As a beginner in AI, NumPy felt a bit scary at fir
 - Data Slicing: Extracting exactly what I need from a big dataset.
 - Real Logic: I solved a 7-task Mini Project analyzing student scores!
 
-🎓 My Mini Project:
+My Mini Project:
 I analyzed a class of 8 students across 3 subjects. I found out who passed, who failed, and what the averages were. It was my first "Real Data" experience!
 
  Files in this Folder:
