@@ -67,10 +67,19 @@ This document provides an organized overview of all topics and exercises covered
 ---
 
 ### **CONCEPT 3: Filtering Data**
+- **Vectorized filtering**
+  - `mask = df['Cluster'] == cluster` ek Boolean Mask (True/False Filter) banata hai.poori table par ek sath (single operation mein) test chalata hai:
 - **Boolean Masking** — filter rows based on conditions
   - `df['Goals'] > 22` → creates boolean Series
   - `df[df['Goals'] > 22]` → keeps only True rows
-  
+
+- **BRACKETE GAME FILTER**
+ - `df[mask]['Age']`--Data ko Filter (Condition) karke specific rows ka ek column nikalna., mask values pr filter kry age col de ga . FOR Example...
+ Filter rows where Cluster==0 $\rightarrow$ Grab 'Age'
+ - `df[['Student', 'English']]`-- ye direct rows or columns ko select krne ka lia use hota hai , dataframe sy grab krny ke lia use krty 
+ - **UNIQUE VALUES COL SY NIKALANA**
+ - `clusters=np.unique(df['Cluster'])`--unique values nikalny ka lia use hota hai , 
+
 - **Combining Conditions**
   - `&` — AND (both conditions true)
   - `|` — OR (either condition true)
@@ -164,7 +173,8 @@ This document provides an organized overview of all topics and exercises covered
 - Fill Grade column with 'Unknown'
 
 ---
-
+### CONCEPT 7 SORTINNG AD RANNKING ALSO INCLUDED
+### CONCEPT 8 MERGING AND CONCATENATION JOINING ALSO INCLUDED
 ### **BONUS CONCEPT: Finding Exact Location of NaN**
 - **Using `np.where()`** — locate missing values precisely
   - `np.where(condition)` → returns tuple of indices
