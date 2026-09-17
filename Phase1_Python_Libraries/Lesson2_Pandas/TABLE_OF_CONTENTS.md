@@ -108,8 +108,9 @@ This document provides an organized overview of all topics and exercises covered
   - `df.drop('ColumnName', axis=1, inplace=True)`
   - `inplace=True` modifies original; False requires reassignment
   
-- **Renaming Columns**
+- **Renaming Columns and Replacing values**
   - `df.rename(columns={'OldName': 'NewName'}, inplace=True)`
+  - just replace instead of .rename , the whole snippet is same
   
 - **Adding Rows**
   - `df.loc[new_index] = [value1, value2, ...]`
