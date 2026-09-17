@@ -117,8 +117,9 @@ This document provides an organized overview of all topics and exercises covered
   - `df.drop('ColumnName', axis=1, inplace=True)`
   - `inplace=True` modifies original; False requires reassignment
   
-- **Renaming Columns**
+- **Renaming Columns and Replacing values**
   - `df.rename(columns={'OldName': 'NewName'}, inplace=True)`
+  - just replace instead of .rename , the whole snippet is same
   
 - **Adding Rows**
   - `df.loc[new_index] = [value1, value2, ...]`
@@ -159,7 +160,10 @@ This document provides an organized overview of all topics and exercises covered
   - `df.fillna(0)` → replace NaN with 0
   - `df['Math'].fillna(df['Math'].mean())` → fill with column mean ⭐ **Most common for ML**
   - `df['Grade'].fillna('Unknown')` → fill text columns with label
-
+### Concept 6 - Group by col, mean ad aggregassion
+```
+print(df.groupby('Cluster')[['Income','Spending_Score']].mean())
+```
 **Practice Set Example:** Student data with missing values (Umar, Ali, Sara, John, Ayesha)
 - Detect missing values with `isnull()`
 - Count missing per column
